@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Game Design Tools: Comparing Unity, Unreal Engine, and Godot</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height:1.6; max-width:900px; margin:30px auto; color:#111; padding:0 20px; }
+    header h1 { margin:0 0 8px 0; font-size:28px; }
+    header p { margin:0 0 20px 0; color:#444; }
+    h2 { margin-top:22px; font-size:20px; }
+    ul { margin:8px 0 16px 20px; }
+    .summary { background:#f6f8fb; padding:12px; border-left:4px solid #2b6cb0; margin:12px 0; }
+    footer { margin-top:26px; color:#555; font-size:14px; }
+    a.anchor { color:#2b6cb0; text-decoration:none; font-weight:600; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Game Design Tools: Comparing Unity, Unreal Engine, and Godot</h1>
+    <p>Choosing the right engine shapes production speed, visual fidelity, team workflow, and ultimately player experience. This comparison focuses on the three engines most teams evaluate today — Unity, Unreal Engine, and Godot — and highlights where each shines, their trade-offs, and which situations I recommend them for. Early note for readers working with external partners: <a class="anchor" href="#">game design companies</a> will appreciate these distinctions when scoping projects and staffing appropriately.</p>
+  </header>
+
+  <section>
+    <h2>Overview: What each engine brings to the table</h2>
+    <p><strong>Unity</strong> is a mature, highly flexible engine with extensive platform support and a massive ecosystem of assets and plugins. It’s known for accelerated iteration, a broad talent pool, and an approachable learning curve for designers and programmers alike.</p>
+    <p><strong>Unreal Engine</strong> is synonymous with cutting-edge visuals and high-fidelity rendering. Built-in tools like the Blueprint visual scripting system and a powerful renderer make it a favorite for projects where photorealism or cinematic presentation is required.</p>
+    <p><strong>Godot</strong> is an open-source engine that’s fast-growing, lightweight, and developer-friendly. It’s especially compelling for 2D and smaller 3D projects, prototyping, and teams who prefer permissive licensing and direct engine control.</p>
+  </section>
+
+  <section>
+    <h2>Graphics & Rendering</h2>
+    <ul>
+      <li><strong>Unreal:</strong> Industry-leading out-of-the-box rendering (Lumen, Nanite in recent versions). Best for AAA visuals, realistic lighting, and large-scale scenes.</li>
+      <li><strong>Unity:</strong> Highly capable with URP and HDRP pipelines. Requires more configuration to reach Unreal’s highest-end visuals but is extremely versatile across styles.</li>
+      <li><strong>Godot:</strong> Lightweight renderer that’s excellent for stylized and 2D visuals; 3D is improving rapidly but doesn’t match Unreal/Unity at the high end yet.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Workflow & Developer Experience</h2>
+    <p>Unity’s Editor is optimized for fast iteration — asset import, prefab workflows, and a large marketplace speed development. Unreal’s Editor is powerful and feature-rich, but has a steeper learning curve; Blueprints lower the barrier for non-programmers. Godot offers a clean, script-first experience (GDScript) that is easy to pick up and excellent for tight teams that want fewer abstractions.</p>
+  </section>
+
+  <section>
+    <h2>Scripting & Extensibility</h2>
+    <ul>
+      <li><strong>Unity:</strong> C# is robust, well-documented, and widely taught. Large community libraries make common systems quick to implement.</li>
+      <li><strong>Unreal:</strong> C++ for performance-critical systems and Blueprints for rapid prototyping. C++ gives maximum control but demands experienced engineers.</li>
+      <li><strong>Godot:</strong> GDScript is simple and fast for development; C# and C++ bindings are also available if needed.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Platforms & Performance</h2>
+    <p>Unity supports the widest range of platforms including mobile, consoles, AR/VR, and web. Unreal focuses on PC/console and high-end platforms but also supports mobile and console with excellent optimization tools. Godot is lightweight and great for desktop, mobile, and HTML5 — ideal for smaller builds and quick ports.</p>
+  </section>
+
+  <section>
+    <h2>Licensing, Cost & Ecosystem</h2>
+    <p>Unreal’s royalty model historically impacted revenue planning for some studios (though Epic has adjusted terms over time), while Unity offers tiered subscriptions and a massive Asset Store. Godot’s MIT-like license gives full freedom without fees, which is attractive for independent teams or educational projects.</p>
+  </section>
+
+  <section>
+    <h2>When to pick which engine — my opinionated quick guide</h2>
+    <ul>
+      <li><strong>Use Unity</strong> for cross-platform releases, rapid iteration, AR/VR projects, and when you need a broad talent pool and mature tooling. For most mid-size teams and many indie studios, Unity is the pragmatic default.</li>
+      <li><strong>Use Unreal</strong> when your primary goal is photorealism, large-scale open worlds, or cinematic experiences. If you need the absolute best visual fidelity and are staffed with experienced C++ engineers or technical artists, Unreal wins.</li>
+      <li><strong>Use Godot</strong> for 2D-first projects, prototypes, or if you want a fully open-source stack without licensing overhead. Godot is also excellent for rapid experimentation and small to medium scope games.</li>
+    </ul>
+  </section>
+
+  <div class="summary">
+    <strong>Bottom line:</strong> There’s no single “best” engine — only the best choice for your project. If forced to recommend one for most teams balancing speed, cost, and platform reach, I’d pick Unity for its versatility; choose Unreal for AAA visual ambition; choose Godot for lightweight, open-source flexibility.
+  </div>
+
+  <footer>
+    <p>Choosing an engine influences art pipelines, hiring, and timeframe. When you brief external partners, be explicit about target platforms and visual goals so your chosen tech aligns with delivery — and when the scope requires top-tier visuals, factor in the pipeline needs that an <a class="anchor" href="#">aaa game art studio</a> will expect.</p>
+  </footer>
+</body>
+</html>

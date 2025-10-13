@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building Game Art Pipelines for Indie Studios</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;margin:24px;color:#111}
+    header{border-bottom:1px solid #e6e6e6;padding-bottom:12px;margin-bottom:18px}
+    h1{font-size:28px;margin:0}
+    p{margin:10px 0}
+    .lead{color:#333}
+    section{margin-bottom:18px}
+    ul{margin:8px 0 8px 20px}
+    code{background:#f5f5f5;padding:2px 6px;border-radius:4px}
+    footer{border-top:1px solid #eee;padding-top:12px;color:#666;font-size:14px}
+    a.anchor{color:#0b6ef6;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Building Game Art Pipelines for Indie Studios</h1>
+    <p class="lead">An approachable guide for small teams to design efficient, repeatable art pipelines — whether you're a solo artist or a five‑person studio. Partner with a <a class="anchor" href="https://www.juegostudio.com/game-art-services">game arts company</a> when you need to scale.</p>
+  </header>
+
+  <section>
+    <h2>Why a Pipeline Matters</h2>
+    <p>Indie studios operate with tight budgets and small teams. A clearly defined art pipeline reduces rework, improves collaboration between artists and programmers, and keeps asset sizes manageable. Good pipelines let creative work happen faster without sacrificing visual quality.</p>
+  </section>
+
+  <section>
+    <h2>Define Your Scope and Constraints Early</h2>
+    <p>Start by defining the visual scope: art style (pixel, low‑poly, stylized, photoreal), target platforms, and performance targets (frame rate, memory). Constraints drive choices like texture resolution, poly budgets, LOD strategy, and animation complexity. Document these as a short "Art Brief" so everyone shares the same expectations.</p>
+  </section>
+
+  <section>
+    <h2>Core Components of an Indie Art Pipeline</h2>
+    <ul>
+      <li><strong>Asset Naming & Folder Conventions:</strong> Standardize names for models, textures, rigs, and animations (e.g., <code>char_knight_v01.fbx</code>). Consistent folders reduce confusion and make automated tools possible.</li>
+      <li><strong>Source Files & Export Rules:</strong> Keep editable source files (Blender, Photoshop) in a separate "source" folder and exports in "build". Define export formats (FBX, glTF, PNG, DDS) and platform‑specific settings.</li>
+      <li><strong>Version Control for Art:</strong> Use Git LFS or Perforce for large binary assets. Even small teams benefit from automated backups and commit messages that explain visual changes.</li>
+      <li><strong>Automated Builds & Validation:</strong> Create scripts to validate texture sizes, poly counts, and naming rules. Automate file conversion (e.g., compressing textures) as part of your CI build so runtime art matches specs.</li>
+      <li><strong>Optimization Checklist:</strong> Include guidelines for mesh decimation, texture atlasing, draw call reduction, and prefab workflows to avoid runtime bottlenecks.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tooling That Scales</h2>
+    <p>Indie studios should favor free or low‑cost tools with active communities: Blender for 3D, Krita or Affinity for 2D, and Aseprite for pixel art. Use a lightweight project tracker (Trello, Notion) to tie art tasks to milestones. Where possible, script repetitive tasks in Python or use editor plugins to speed up import and setup.</p>
+  </section>
+
+  <section>
+    <h2>Artist & Programmer Handoff</h2>
+    <p>Clear documentation at the handoff boundary saves hours. Provide example prefabs, documented shader inputs, and a small "integration scene" that shows how to plug assets into the engine. Create a short checklist: import, material assignment, scale check, animation retarget test, and memory profiling step.</p>
+  </section>
+
+  <section>
+    <h2>Iterative Review and QA</h2>
+    <p>Set up regular review sessions where artists demonstrate assets in the engine. Use annotated screenshots for feedback, keep a bug/feedback board focused on visual issues, and prioritize fixes that affect performance or player experience. Fast, focused reviews prevent small problems from becoming costly rewrites.</p>
+  </section>
+
+  <section>
+    <h2>Documentation & Training</h2>
+    <p>Create a short developer wiki that covers your pipeline: naming rules, export presets, optimization targets, and how to run automation scripts. Document onboarding checklists so freelancers and new hires can become productive in days, not weeks.</p>
+  </section>
+
+  <section>
+    <h2>When to Outsource</h2>
+    <p>If a deadline or scope spike threatens delivery, selectively outsource specialized tasks (hero character modelling, complex VFX). Choose an outsourcing partner that can work within your pipeline or provide their exports using your naming conventions to minimize friction.</p>
+  </section>
+
+  <section>
+    <h2>Closing Thoughts</h2>
+    <p>For indie teams, the best pipeline is the one you actually use — simple, documented, and automated where it matters. Focus on repeatability and clear handoffs, and you’ll preserve creative momentum while keeping technical debt low. If you need to scale quickly, consider talking to a partner — especially a <a class="anchor" href="https://www.juegostudio.com/game-development-services">game development company in canada</a> — who can slot into your pipeline with minimal overhead.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Indie Studio Playbook. Built with practical workflows for teams of all sizes.</p>
+  </footer>
+</body>
+</html>
